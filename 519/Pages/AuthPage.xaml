@@ -1,0 +1,23 @@
+﻿<Page x:Class="_519.Pages.AuthPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_519.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AuthPage" Background="AliceBlue">
+
+	<Grid>
+		<Label Content="Авторизация" HorizontalAlignment="Left" Margin="302,76,0,0" VerticalAlignment="Top" Height="47" Width="146" FontSize="22"/>
+		<Label Content="Логин:" HorizontalAlignment="Left" Margin="199,183,0,0" VerticalAlignment="Top" FontSize="16"/>
+		<Label Content="Пароль:" HorizontalAlignment="Left" Margin="189,219,0,0" VerticalAlignment="Top" FontSize="16"/>
+		<TextBox x:Name="TextBoxLogin" TextChanged="TextBoxLogin_Changed" HorizontalAlignment="Left" Height="31" Margin="262,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="201"/>
+		<PasswordBox x:Name="TextBoxPassword" PasswordChanged="TextBoxPassword_Changed" HorizontalAlignment="Left" Margin="262,219,0,0" VerticalAlignment="Top" Width="201" Height="31"/>
+		<Button Content="Вход" HorizontalAlignment="Left" Margin="463,316,0,0" VerticalAlignment="Top" Width="75"/>
+		<Button Content="Регистрация" HorizontalAlignment="Left" Margin="199,316,0,0" VerticalAlignment="Top" Width="75"/>
+		<TextBlock Foreground="Gray" Name="txtHintLogin" HorizontalAlignment="Left" Margin="262,183,0,0" TextWrapping="Wrap" Text="Логин или почта" VerticalAlignment="Top" Height="31" Width="201" FontSize="20"/>
+		<TextBlock HorizontalAlignment="Left" Margin="262,219,0,0" TextWrapping="Wrap" Text="Пароль" Foreground="Gray" Name="txtHintPassword" VerticalAlignment="Top" Height="31" Width="201" FontSize="20"/>
+
+	</Grid>
+</Page>
